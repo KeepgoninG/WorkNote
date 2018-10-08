@@ -1,0 +1,39 @@
+git init                                               //在当前的位置创建仓库 名称为.git，默认的是隐藏的文件属性
+ssh-keygen -t rsa -C"liziliang.li@outlook.com"         //创建秘钥
+git clone git@github.com:Moveing/work_project.git      //clone 仓库
+git log                                                //查看版本日志
+git status                                             //查看更改状态，比如更改了某个文件
+git diff                                               //查看更改的内容，显示所有更改的内容
+git diff LockGW/sdk-ameba-v4.0a/sdk-ameba-v4.0a/project/realtek_amebaz_va0_example/src/main.c
+    //后面的是路径，查看该路径下的更改内容
+git add -A                                              //提交到缓存区
+git checkout .                                          //在add之前操作可以删除所有没有添加到缓存的更改内容
+git commit -m "test first 2018-08-05"                   //提交到本地仓库，并注释双引号内的内容
+git reset --hard 6e97                                   //回退本地仓库的以6e97开头的版本；可以再回到清除的版本(新版)
+git reset --hard HEAD^                                  //回退一个版本
+git reset --hard HEAD^100                               //往前回退100个版本
+touch .gitignore                                        //在仓库的位置创建.gitignore的文件，文件内添加push时忽略的文件等。
+git branch                                              //查看分支，*号标记的就是当前的分支，(一般master都是用来发布的版本，不要轻易的改变并提交，其他的分支就是自己更改并且验证功能的)
+git push --set-upstream origin project111               //提交分支到github上，并且创建分支名称为project111
+git checkout master                                     //切换分支到master
+git merge project111                                    //当前操作的分支是谁，就将命令中的分支合并到当前操作路径的分支中，所以可以是分支合并到分支，也可以master合并到分支等等。
+git branch -d project111                                //删除命令后面指定的分支
+git branch -m devel develop                             //重命名分支
+
+代码同步到主项目：
+1、git pull 先拉下来仓库看是否和服务器冲突，然后再push到远程服务器；
+2、Pull request 并备注修改的内容；
+3、主项目管理者在New pull request 中确认是否同步更新代码；
+
+从主项目中保持同步更新：
+1、给远端服务器取一个别名，git remote add upstream git@github.com:ryeex/firmware_sake.git 名称可以随便取
+2、同步到本地仓库，git pull upstream master
+
+
+
+
+
+
+
+
+
