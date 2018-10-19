@@ -1,0 +1,9 @@
+si 1
+speed 4000
+r
+h
+mem8 0x8000, 20
+mem8 0x8100, 6
+mem8 0x8080, 20
+mem8 0xFF800, 4
+exit
