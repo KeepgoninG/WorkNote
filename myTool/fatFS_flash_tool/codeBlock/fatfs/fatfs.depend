@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1520847621 source:c:\users\lixue\documents\code\firmware-tools\fatfs_flash_tool\fatfs\diskio.c
+	"diskio.h"
+
+1516329542 c:\users\lixue\documents\code\firmware-tools\fatfs_flash_tool\fatfs\diskio.h
+	"integer.h"
+
+1516329542 c:\users\lixue\documents\code\firmware-tools\fatfs_flash_tool\fatfs\integer.h
+	<windows.h>
+	<tchar.h>
+
+1517814558 source:c:\users\lixue\documents\code\firmware-tools\fatfs_flash_tool\fatfs\ff.c
+	"ff.h"
+	"diskio.h"
+	<stdarg.h>
+
+1516329542 c:\users\lixue\documents\code\firmware-tools\fatfs_flash_tool\fatfs\ff.h
+	"integer.h"
+	"ffconf.h"
+
+1517816350 c:\users\lixue\documents\code\firmware-tools\fatfs_flash_tool\fatfs\ffconf.h
+
+1516329542 source:c:\users\lixue\documents\code\firmware-tools\fatfs_flash_tool\fatfs\ffsystem.c
+	"ff.h"
+
+1516329542 source:c:\users\lixue\documents\code\firmware-tools\fatfs_flash_tool\fatfs\ffunicode.c
+	"ff.h"
+
+1526868881 source:c:\users\lixue\documents\code\firmware-tools\fatfs_flash_tool\codeblock\fatfs\main.c
+	<stdio.h>
+	<stdlib.h>
+	<io.h>
+	<ctype.h>
+	<ff.h>
+	<stdbool.h>
+
